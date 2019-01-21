@@ -1,0 +1,14 @@
+.pt-30vh {
+    padding-top: 25vh;
+}
+
+.app-icon {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
+
+.tab-set {
+    height: initial;
+    margin-bottom: 1.5rem !important;
+}

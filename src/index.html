@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>SocialLogin</title>
+  <base href="/">
+ 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+
+<body>
+  <app-root></app-root>
+</body>
+<script src="https://sdk.accountkit.com/en_US/sdk.js"></script>
+<script>
+  AccountKit_OnInteractive = function () {
+    AccountKit.init({
+      appId: "166027387356154",
+      state: "abc",
+      version: "v1.1",
+      fbAppEventsEnabled: true,
+      debug: true,
+      redirect: 'http://localhost:4200/'
+    });
+  };
+</script>
+
+</html>
